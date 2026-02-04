@@ -1,4 +1,10 @@
-# Awesome OpenClaw [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="assets/banner.png" alt="Awesome OpenClaw" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+</p>
 
 > A curated list of awesome [OpenClaw](https://openclaw.ai/) resources — community projects, tools, skills, integrations, and examples for the open-source personal AI assistant. 🦞
 
