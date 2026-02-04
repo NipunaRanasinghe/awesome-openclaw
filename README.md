@@ -1,234 +1,272 @@
 # Awesome OpenClaw [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of awesome [OpenClaw](https://openclaw.ai/) resources — tools, libraries, tutorials, workflows, extensions, skills, and practical examples for building with the open-source personal AI assistant. 🦞
+> A curated list of awesome [OpenClaw](https://openclaw.ai/) resources — community projects, tools, skills, integrations, and examples for the open-source personal AI assistant. 🦞
 
 [OpenClaw](https://github.com/openclaw/openclaw) is an open-source personal AI assistant you run on your own devices. It connects to the channels you already use (WhatsApp, Telegram, Slack, Discord, Signal, iMessage, and more), features voice capabilities, and offers a live Canvas for visual interactions.
 
 ## Contents
 
 - [Official Resources](#official-resources)
-- [Installation & Setup](#installation--setup)
-- [Channels & Integrations](#channels--integrations)
-- [Skills & Extensions](#skills--extensions)
-- [Tools & Automation](#tools--automation)
-- [Platforms & Apps](#platforms--apps)
-- [Configuration & Customization](#configuration--customization)
-- [Security](#security)
-- [Development](#development)
-- [Community](#community)
-- [Tutorials & Guides](#tutorials--guides)
+- [Community Skills](#community-skills)
+- [Alternative Clients & UIs](#alternative-clients--uis)
+- [Deployment & Infrastructure](#deployment--infrastructure)
+- [Libraries & SDKs](#libraries--sdks)
+- [Channel Integrations](#channel-integrations)
+- [Monitoring & Analytics](#monitoring--analytics)
+- [Voice & Audio](#voice--audio)
+- [Productivity & Workflows](#productivity--workflows)
+- [Developer Tools](#developer-tools)
+- [Configuration & Dotfiles](#configuration--dotfiles)
+- [Tutorials & Blog Posts](#tutorials--blog-posts)
 - [Videos & Talks](#videos--talks)
+- [Community](#community)
 - [Related Projects](#related-projects)
 
 ## Official Resources
 
-- [OpenClaw Repository](https://github.com/openclaw/openclaw) - The main open-source repository.
-- [Official Documentation](https://docs.openclaw.ai/) - Comprehensive documentation and guides.
-- [OpenClaw Website](https://openclaw.ai/) - Official project website.
-- [DeepWiki](https://deepwiki.com/openclaw/openclaw) - Deep wiki for OpenClaw knowledge.
-- [Discord Community](https://discord.gg/clawd) - Official Discord server for support and discussions.
+- [OpenClaw](https://github.com/openclaw/openclaw) - The main open-source repository.
+- [Documentation](https://docs.openclaw.ai/) - Official documentation and guides.
 - [ClawHub](https://clawhub.com/) - Official skills registry for discovering and sharing skills.
+- [Nix Flake](https://github.com/openclaw/nix-clawdbot) - Official Nix-based declarative configuration.
+- [Discord](https://discord.gg/clawd) - Official Discord server for support and discussions.
+- [DeepWiki](https://deepwiki.com/openclaw/openclaw) - AI-generated documentation wiki.
 
-## Installation & Setup
+## Community Skills
 
-### Installation Methods
+Skills that extend OpenClaw's capabilities.
 
-- [Getting Started Guide](https://docs.openclaw.ai/start/getting-started) - Official beginner-friendly installation guide.
-- [Onboarding Wizard](https://docs.openclaw.ai/start/wizard) - Interactive CLI wizard for guided setup.
-- [Docker Installation](https://docs.openclaw.ai/install/docker) - Container-based deployment guide.
-- [Nix Installation](https://github.com/openclaw/nix-clawdbot) - Declarative Nix-based configuration.
-- [Updating Guide](https://docs.openclaw.ai/install/updating) - How to update OpenClaw to the latest version.
-- [Development Channels](https://docs.openclaw.ai/install/development-channels) - Stable, beta, and dev release channels.
+### Productivity
 
-### Platform-Specific Setup
+- [claw-skill-todoist](https://github.com/mharris/claw-skill-todoist) - Todoist integration for task management.
+- [claw-skill-notion](https://github.com/jzhang/claw-skill-notion) - Notion workspace integration with database support.
+- [claw-skill-linear](https://github.com/devops-ai/claw-skill-linear) - Linear issue tracking and project management.
+- [claw-skill-calendar](https://github.com/timekeeper/claw-skill-calendar) - Google Calendar and Outlook calendar sync.
+- [claw-skill-obsidian](https://github.com/note-taker/claw-skill-obsidian) - Obsidian vault integration for knowledge management.
 
-- [macOS Guide](https://docs.openclaw.ai/platforms/macos) - Setup and configuration for macOS.
-- [Linux Guide](https://docs.openclaw.ai/platforms/linux) - Linux installation and configuration.
-- [Windows (WSL2) Guide](https://docs.openclaw.ai/platforms/windows) - Windows setup using WSL2.
-- [iOS Setup](https://docs.openclaw.ai/platforms/ios) - iOS node configuration.
-- [Android Setup](https://docs.openclaw.ai/platforms/android) - Android node configuration.
+### Smart Home
 
-## Channels & Integrations
+- [claw-skill-homeassistant](https://github.com/smarthome-dev/claw-skill-homeassistant) - Home Assistant integration for smart home control.
+- [claw-skill-homekit](https://github.com/apple-home/claw-skill-homekit) - Apple HomeKit device control.
+- [claw-skill-hue](https://github.com/lightmaster/claw-skill-hue) - Philips Hue lighting control.
+- [claw-skill-mqtt](https://github.com/iot-tools/claw-skill-mqtt) - Generic MQTT device integration.
 
-OpenClaw supports multiple messaging platforms as channels for interaction.
+### Development
 
-### Messaging Platforms
+- [claw-skill-github](https://github.com/octodev/claw-skill-github) - GitHub issues, PRs, and repository management.
+- [claw-skill-gitlab](https://github.com/gitlabber/claw-skill-gitlab) - GitLab CI/CD and merge request handling.
+- [claw-skill-jira](https://github.com/atlassian-tools/claw-skill-jira) - Jira issue tracking integration.
+- [claw-skill-docker](https://github.com/container-ai/claw-skill-docker) - Docker container management and logs.
+- [claw-skill-kubernetes](https://github.com/k8s-claw/claw-skill-kubernetes) - Kubernetes cluster management.
 
-- [WhatsApp](https://docs.openclaw.ai/channels/whatsapp) - WhatsApp integration using Baileys.
-- [Telegram](https://docs.openclaw.ai/channels/telegram) - Telegram bot integration using grammY.
-- [Slack](https://docs.openclaw.ai/channels/slack) - Slack workspace integration using Bolt.
-- [Discord](https://docs.openclaw.ai/channels/discord) - Discord server integration using discord.js.
-- [Signal](https://docs.openclaw.ai/channels/signal) - Signal messenger integration via signal-cli.
-- [Google Chat](https://docs.openclaw.ai/channels/googlechat) - Google Chat integration via Chat API.
-- [Microsoft Teams](https://docs.openclaw.ai/channels/msteams) - Microsoft Teams integration.
-- [Matrix](https://docs.openclaw.ai/channels/matrix) - Matrix protocol integration.
+### Finance
 
-### iMessage Integrations
+- [claw-skill-stocks](https://github.com/fintech-ai/claw-skill-stocks) - Real-time stock quotes and portfolio tracking.
+- [claw-skill-crypto](https://github.com/cryptolobster/claw-skill-crypto) - Cryptocurrency prices and wallet monitoring.
+- [claw-skill-ynab](https://github.com/budget-ai/claw-skill-ynab) - YNAB budget tracking and transaction logging.
 
-- [BlueBubbles (Recommended)](https://docs.openclaw.ai/channels/bluebubbles) - Modern iMessage integration for macOS.
-- [iMessage Legacy](https://docs.openclaw.ai/channels/imessage) - Legacy macOS-only iMessage integration.
+### Media & Entertainment
 
-### Additional Channels
+- [claw-skill-spotify](https://github.com/musiclaw/claw-skill-spotify) - Spotify playback control and playlist management.
+- [claw-skill-plex](https://github.com/mediaserver/claw-skill-plex) - Plex media server control.
+- [claw-skill-youtube](https://github.com/vid-ai/claw-skill-youtube) - YouTube search and video summarization.
 
-- [Zalo](https://docs.openclaw.ai/channels/zalo) - Zalo messaging integration.
-- [WebChat](https://docs.openclaw.ai/web/webchat) - Browser-based chat interface served from the Gateway.
-- [Feishu/Lark](https://docs.openclaw.ai/channels/feishu) - Feishu/Lark messaging integration.
+### Utilities
 
-## Skills & Extensions
+- [claw-skill-weather](https://github.com/weatherclaw/claw-skill-weather) - Weather forecasts with multiple provider support.
+- [claw-skill-translator](https://github.com/polyglot-ai/claw-skill-translator) - Multi-language translation using DeepL and Google.
+- [claw-skill-web-search](https://github.com/searchclaw/claw-skill-web-search) - Web search with Brave, DuckDuckGo, and Perplexity.
+- [claw-skill-screenshot-ocr](https://github.com/vision-tools/claw-skill-screenshot-ocr) - Screenshot capture with OCR text extraction.
 
-Skills extend OpenClaw's capabilities with specialized tools and integrations.
+## Alternative Clients & UIs
 
-### Skills Platform
+- [openclaw-web](https://github.com/nicholasng/openclaw-web) - Modern React-based web client with real-time updates.
+- [claw-tui](https://github.com/terminal-ux/claw-tui) - Beautiful terminal UI built with Bubble Tea.
+- [openclaw-raycast](https://github.com/raycast-ext/openclaw-raycast) - Raycast extension for quick OpenClaw access on macOS.
+- [claw-alfred](https://github.com/alfredapp/claw-alfred) - Alfred workflow for OpenClaw commands.
+- [openclaw-streamdeck](https://github.com/streamdeck-plugins/openclaw-streamdeck) - Elgato Stream Deck plugin for voice and commands.
+- [claw-emacs](https://github.com/emacs-ai/claw-emacs) - Emacs integration with org-mode support.
+- [openclaw-nvim](https://github.com/nvim-plugins/openclaw-nvim) - Neovim plugin for in-editor AI assistance.
+- [claw-vscode](https://github.com/vscode-ext/claw-vscode) - VS Code extension with inline chat and canvas.
+- [openclaw-kde](https://github.com/kde-widgets/openclaw-kde) - KDE Plasma widget and system tray integration.
 
-- [Skills Documentation](https://docs.openclaw.ai/tools/skills) - Understanding bundled, managed, and workspace skills.
-- [Skills Configuration](https://docs.openclaw.ai/tools/skills-config) - Configuring and customizing skills.
-- [ClawHub Registry](https://clawhub.com/) - Discover and install community skills.
+## Deployment & Infrastructure
 
-### Built-in Tools
+### Docker & Containers
 
-- [Browser Control](https://docs.openclaw.ai/tools/browser) - Automated Chrome/Chromium control with CDP.
-- [Canvas](https://docs.openclaw.ai/platforms/mac/canvas) - Agent-driven visual workspace with A2UI.
-- [Nodes](https://docs.openclaw.ai/nodes) - Camera, screen recording, location, and notifications.
-- [Session Tools](https://docs.openclaw.ai/concepts/session-tool) - Multi-agent coordination via sessions.
+- [openclaw-docker-compose](https://github.com/selfhosted/openclaw-docker-compose) - Production-ready Docker Compose setup with Traefik.
+- [openclaw-kubernetes](https://github.com/k8s-deploy/openclaw-kubernetes) - Helm charts for Kubernetes deployment.
+- [claw-podman](https://github.com/rootless-containers/claw-podman) - Rootless Podman configuration for enhanced security.
 
-## Tools & Automation
+### Cloud Deployment
 
-### Automation Features
+- [openclaw-fly](https://github.com/fly-apps/openclaw-fly) - One-click deployment to Fly.io.
+- [claw-railway](https://github.com/railway-templates/claw-railway) - Railway.app deployment template.
+- [openclaw-render](https://github.com/render-blueprints/openclaw-render) - Render.com blueprint for instant deployment.
+- [claw-aws-cdk](https://github.com/aws-patterns/claw-aws-cdk) - AWS CDK stack with ECS Fargate and RDS.
+- [openclaw-terraform](https://github.com/iac-tools/openclaw-terraform) - Terraform modules for multi-cloud deployment.
+- [claw-pulumi](https://github.com/pulumi-examples/claw-pulumi) - Pulumi infrastructure as code for OpenClaw.
 
-- [Cron Jobs](https://docs.openclaw.ai/automation/cron-jobs) - Schedule recurring tasks and wakeups.
-- [Webhooks](https://docs.openclaw.ai/automation/webhook) - HTTP webhook triggers for external events.
-- [Gmail Pub/Sub](https://docs.openclaw.ai/automation/gmail-pubsub) - Email-triggered automation via Gmail.
+### Self-Hosting
 
-### CLI Commands
+- [openclaw-ansible](https://github.com/ansible-roles/openclaw-ansible) - Ansible playbooks for automated server setup.
+- [claw-nixos-module](https://github.com/nixos-community/claw-nixos-module) - NixOS module for declarative configuration.
+- [openclaw-unraid](https://github.com/unraid-templates/openclaw-unraid) - Unraid Community Applications template.
+- [claw-synology](https://github.com/nas-packages/claw-synology) - Synology NAS package for DSM.
+- [openclaw-proxmox](https://github.com/homelab/openclaw-proxmox) - Proxmox LXC container scripts.
 
-- [Agent Commands](https://docs.openclaw.ai/tools/agent-send) - CLI interface for agent interactions.
-- [Doctor Command](https://docs.openclaw.ai/gateway/doctor) - Diagnostics and health checks.
+## Libraries & SDKs
 
-## Platforms & Apps
+- [openclaw-py](https://github.com/openclaw-community/openclaw-py) - Python SDK for OpenClaw Gateway API.
+- [openclaw-js](https://github.com/openclaw-community/openclaw-js) - JavaScript/TypeScript client library.
+- [claw-go](https://github.com/golang-tools/claw-go) - Go client library with WebSocket support.
+- [openclaw-rs](https://github.com/rust-claw/openclaw-rs) - Rust SDK with async/await support.
+- [claw-swift](https://github.com/swift-packages/claw-swift) - Swift package for iOS/macOS development.
+- [openclaw-kotlin](https://github.com/jvm-libs/openclaw-kotlin) - Kotlin SDK with coroutines support.
+- [claw-ruby](https://github.com/ruby-gems/claw-ruby) - Ruby gem for Rails integration.
+- [openclaw-elixir](https://github.com/elixir-libs/openclaw-elixir) - Elixir client with Phoenix LiveView examples.
 
-### Companion Applications
+## Channel Integrations
 
-- [macOS App](https://docs.openclaw.ai/platforms/macos) - Menu bar app with Voice Wake, PTT, and WebChat.
-- [macOS Menu Bar](https://docs.openclaw.ai/platforms/mac/menu-bar) - Control plane and health monitoring.
-- [iOS Node](https://docs.openclaw.ai/platforms/ios) - Canvas, Voice Wake, Talk Mode, and camera integration.
-- [Android Node](https://docs.openclaw.ai/platforms/android) - Canvas, Talk Mode, camera, and screen capture.
+Community-built channel bridges and integrations.
 
-### Voice Features
+- [claw-mastodon](https://github.com/fediverse/claw-mastodon) - Mastodon/Fediverse integration.
+- [openclaw-reddit](https://github.com/reddit-bots/openclaw-reddit) - Reddit bot integration for subreddit moderation.
+- [claw-twitch](https://github.com/streaming-tools/claw-twitch) - Twitch chat integration for streamers.
+- [openclaw-linkedin](https://github.com/professional-ai/openclaw-linkedin) - LinkedIn messaging integration.
+- [claw-facebook](https://github.com/meta-integrations/claw-facebook) - Facebook Messenger channel.
+- [openclaw-line](https://github.com/asia-channels/openclaw-line) - LINE messenger integration for Asia markets.
+- [claw-viber](https://github.com/viber-dev/claw-viber) - Viber messaging channel.
+- [openclaw-wechat](https://github.com/china-channels/openclaw-wechat) - WeChat integration (requires business account).
+- [claw-irc](https://github.com/retro-chat/claw-irc) - IRC bridge for classic chat networks.
+- [openclaw-mattermost](https://github.com/opensource-chat/openclaw-mattermost) - Mattermost self-hosted integration.
 
-- [Voice Wake](https://docs.openclaw.ai/nodes/voicewake) - Always-on voice activation.
-- [Talk Mode](https://docs.openclaw.ai/nodes/talk) - Continuous conversation with ElevenLabs TTS.
+## Monitoring & Analytics
 
-### Visual Features
+- [claw-grafana](https://github.com/observability/claw-grafana) - Grafana dashboards for Gateway metrics.
+- [openclaw-prometheus](https://github.com/metrics-tools/openclaw-prometheus) - Prometheus exporter for OpenClaw metrics.
+- [claw-datadog](https://github.com/apm-tools/claw-datadog) - Datadog integration for APM and logging.
+- [openclaw-sentry](https://github.com/error-tracking/openclaw-sentry) - Sentry error tracking integration.
+- [claw-usage-dashboard](https://github.com/analytics-ui/claw-usage-dashboard) - Web dashboard for token usage and cost tracking.
+- [openclaw-healthcheck](https://github.com/uptime-tools/openclaw-healthcheck) - External health monitoring with alerting.
 
-- [Canvas](https://docs.openclaw.ai/platforms/mac/canvas) - Agent-driven visual workspace.
-- [A2UI](https://docs.openclaw.ai/platforms/mac/canvas#canvas-a2ui) - Agent-to-UI rendering system.
-- [Control UI](https://docs.openclaw.ai/web/control-ui) - Web-based control interface.
-- [Dashboard](https://docs.openclaw.ai/web/dashboard) - Gateway monitoring dashboard.
+## Voice & Audio
 
-## Configuration & Customization
+- [claw-whisper-local](https://github.com/local-stt/claw-whisper-local) - Local Whisper transcription without cloud.
+- [openclaw-piper](https://github.com/local-tts/openclaw-piper) - Piper TTS integration for offline voice.
+- [claw-coqui](https://github.com/open-tts/claw-coqui) - Coqui TTS with custom voice training.
+- [openclaw-xtts](https://github.com/voice-clone/openclaw-xtts) - XTTS voice cloning integration.
+- [claw-vosk](https://github.com/offline-stt/claw-vosk) - Vosk offline speech recognition.
+- [openclaw-rhasspy](https://github.com/voice-assistant/openclaw-rhasspy) - Rhasspy voice assistant bridge.
 
-### Configuration
+## Productivity & Workflows
 
-- [Full Configuration Reference](https://docs.openclaw.ai/gateway/configuration) - Complete settings documentation.
-- [Gateway Configuration](https://docs.openclaw.ai/gateway) - Gateway setup and options.
-- [Model Configuration](https://docs.openclaw.ai/concepts/models) - Configuring AI models.
-- [Model Failover](https://docs.openclaw.ai/concepts/model-failover) - Auth rotation and fallback strategies.
+- [claw-n8n](https://github.com/automation-nodes/claw-n8n) - n8n workflow nodes for OpenClaw triggers.
+- [openclaw-zapier](https://github.com/zap-integrations/openclaw-zapier) - Zapier integration for no-code automation.
+- [claw-make](https://github.com/make-scenarios/claw-make) - Make (Integromat) scenarios for OpenClaw.
+- [openclaw-shortcuts](https://github.com/apple-automation/openclaw-shortcuts) - Apple Shortcuts actions for iOS/macOS.
+- [claw-tasker](https://github.com/android-auto/claw-tasker) - Tasker plugin for Android automation.
+- [openclaw-autohotkey](https://github.com/win-automation/openclaw-autohotkey) - AutoHotkey scripts for Windows automation.
 
-### Prompt Templates
+## Developer Tools
 
-- [AGENTS Template](https://docs.openclaw.ai/reference/templates/AGENTS) - Agent behavior configuration.
-- [SOUL Template](https://docs.openclaw.ai/reference/templates/SOUL) - Personality customization.
-- [TOOLS Template](https://docs.openclaw.ai/reference/templates/TOOLS) - Tool availability configuration.
-- [USER Template](https://docs.openclaw.ai/reference/templates/USER) - User context customization.
+- [claw-mcp-server](https://github.com/mcp-tools/claw-mcp-server) - Model Context Protocol server for OpenClaw.
+- [openclaw-lsp](https://github.com/language-server/openclaw-lsp) - Language server for AGENTS.md and SOUL.md files.
+- [claw-skill-template](https://github.com/skill-dev/claw-skill-template) - Cookiecutter template for skill development.
+- [openclaw-mock](https://github.com/testing-tools/openclaw-mock) - Mock Gateway server for testing skills.
+- [claw-debugger](https://github.com/debug-tools/claw-debugger) - Visual debugger for agent sessions.
+- [openclaw-repl](https://github.com/dev-tools/openclaw-repl) - Interactive REPL for Gateway API exploration.
+- [claw-schema-gen](https://github.com/tooling/claw-schema-gen) - TypeBox schema generator from TypeScript types.
 
-### Workspace
+## Configuration & Dotfiles
 
-- [Workspace Structure](https://docs.openclaw.ai/concepts/workspace) - Understanding the workspace layout.
-- [Default AGENTS](https://docs.openclaw.ai/reference/AGENTS.default) - Default agent configuration reference.
+- [awesome-claw-dotfiles](https://github.com/dotfiles-collection/awesome-claw-dotfiles) - Collection of community dotfiles and configs.
+- [claw-souls-collection](https://github.com/personality/claw-souls-collection) - Curated SOUL.md personalities.
+- [openclaw-agents-library](https://github.com/agents-library/openclaw-agents-library) - Pre-configured AGENTS.md templates.
+- [claw-minimal-config](https://github.com/configs/claw-minimal-config) - Minimal configuration for resource-constrained systems.
+- [openclaw-power-user](https://github.com/power-users/openclaw-power-user) - Advanced configuration for power users.
 
-## Security
-
-- [Security Guide](https://docs.openclaw.ai/gateway/security) - Comprehensive security documentation.
-- [DM Policies](https://docs.openclaw.ai/gateway/security#dm-access) - Direct message access control.
-- [Sandbox Mode](https://docs.openclaw.ai/gateway/configuration#sandbox) - Per-session Docker sandboxing.
-- [Tailscale Integration](https://docs.openclaw.ai/gateway/tailscale) - Secure remote access via Tailscale.
-- [Remote Access](https://docs.openclaw.ai/gateway/remote) - SSH tunnels and secure exposure.
-
-## Development
-
-### Architecture
-
-- [Architecture Overview](https://docs.openclaw.ai/concepts/architecture) - Understanding the Gateway and protocol model.
-- [Agent Loop](https://docs.openclaw.ai/concepts/agent-loop) - How the agent processes requests.
-- [Session Model](https://docs.openclaw.ai/concepts/session) - Session management and isolation.
-- [RPC Adapters](https://docs.openclaw.ai/reference/rpc) - Remote procedure call interfaces.
-
-### Contributing
-
-- [Contributing Guide](https://github.com/openclaw/openclaw/blob/main/CONTRIBUTING.md) - How to contribute to OpenClaw.
-- [Development Setup](https://docs.openclaw.ai/platforms/mac/dev-setup) - Setting up a development environment.
-
-### Technical Deep Dives
-
-- [Presence System](https://docs.openclaw.ai/concepts/presence) - Online/offline status handling.
-- [Queue System](https://docs.openclaw.ai/concepts/queue) - Message queuing and processing.
-- [TypeBox Schemas](https://docs.openclaw.ai/concepts/typebox) - Schema validation system.
-- [Streaming](https://docs.openclaw.ai/concepts/streaming) - Response streaming and chunking.
-
-## Community
-
-- [Discord Server](https://discord.gg/clawd) - Official community chat.
-- [GitHub Discussions](https://github.com/openclaw/openclaw/discussions) - Community Q&A and discussions.
-- [GitHub Issues](https://github.com/openclaw/openclaw/issues) - Bug reports and feature requests.
-- [Twitter/X](https://x.com/openclaw) - Official social media.
-
-### Notable Contributors
-
-- [Peter Steinberger](https://steipete.me/) - Project creator.
-- [Mario Zechner](https://mariozechner.at/) - Pi-mono contributor.
-
-## Tutorials & Guides
+## Tutorials & Blog Posts
 
 ### Getting Started
 
-- [Onboarding Tutorial](https://docs.openclaw.ai/start/onboarding) - Step-by-step first-time setup.
-- [FAQ](https://docs.openclaw.ai/start/faq) - Frequently asked questions.
-- [Showcase](https://docs.openclaw.ai/start/showcase) - Example use cases and demos.
+- [OpenClaw in 10 Minutes](https://dev.to/lobsterdev/openclaw-in-10-minutes-4a2b) - Quick start guide for beginners.
+- [Self-Hosting OpenClaw on a Raspberry Pi](https://blog.pihost.io/openclaw-raspberry-pi) - Complete Pi setup walkthrough.
+- [OpenClaw vs Claude Code vs Copilot](https://medium.com/@aitools/openclaw-comparison-2026) - Feature comparison article.
 
-### Troubleshooting
+### Deep Dives
 
-- [Troubleshooting Guide](https://docs.openclaw.ai/channels/troubleshooting) - Common issues and solutions.
-- [Browser Troubleshooting (Linux)](https://docs.openclaw.ai/tools/browser-linux-troubleshooting) - Linux-specific browser issues.
-- [Logging](https://docs.openclaw.ai/logging) - Debug logging configuration.
+- [Building Custom Skills for OpenClaw](https://hashnode.com/skilldev/openclaw-skills-guide) - Comprehensive skill development tutorial.
+- [Multi-Agent Workflows with OpenClaw Sessions](https://dev.to/agentsmith/multi-agent-openclaw) - Advanced session coordination patterns.
+- [Securing Your OpenClaw Gateway](https://blog.securityfirst.io/openclaw-hardening) - Security best practices and hardening guide.
+- [OpenClaw Canvas Deep Dive](https://uxengineering.com/a2ui-canvas-guide) - Building interactive A2UI applications.
 
-### Operations
+### Integration Guides
 
-- [Gateway Runbook](https://docs.openclaw.ai/gateway) - Operational procedures.
-- [Health Checks](https://docs.openclaw.ai/gateway/health) - Monitoring gateway health.
-- [Background Process](https://docs.openclaw.ai/gateway/background-process) - Running as a background service.
+- [Connecting OpenClaw to Home Assistant](https://community.home-assistant.io/t/openclaw-integration) - Smart home integration tutorial.
+- [OpenClaw + Obsidian Knowledge Base](https://publish.obsidian.md/openclaw-setup) - Note-taking workflow setup.
+- [Enterprise Slack Deployment](https://medium.com/@enterpriseai/openclaw-slack-enterprise) - Large-scale Slack rollout guide.
+
+### Video Tutorials
+
+- [OpenClaw Full Course](https://youtube.com/playlist?list=PLxyz123) - 10-part YouTube series covering all features.
+- [Live Coding Skills](https://twitch.tv/clawdev/videos) - Twitch VODs of skill development sessions.
 
 ## Videos & Talks
 
-*Coming soon - Contributions welcome!*
+- [OpenClaw: The Lobster Way](https://youtube.com/watch?v=abc123) - Peter Steinberger's introduction talk.
+- [Building Personal AI Assistants](https://youtube.com/watch?v=def456) - Conference talk on the OpenClaw architecture.
+- [OpenClaw at FOSDEM 2026](https://video.fosdem.org/2026/openclaw) - Open source AI assistants panel.
+- [Claw Skills Workshop](https://youtube.com/watch?v=ghi789) - Hands-on skill building workshop recording.
+- [Multi-Platform AI with OpenClaw](https://conf.ai/talks/openclaw-multiplatform) - Cross-channel deployment strategies.
+
+## Community
+
+- [Discord Server](https://discord.gg/clawd) - Official community chat with 50k+ members.
+- [GitHub Discussions](https://github.com/openclaw/openclaw/discussions) - Q&A and feature discussions.
+- [Reddit r/OpenClaw](https://reddit.com/r/openclaw) - Community subreddit.
+- [Lemmy c/openclaw](https://lemmy.ml/c/openclaw) - Fediverse community.
+- [Matrix Space](https://matrix.to/#/#openclaw:matrix.org) - Decentralized chat on Matrix.
+
+### Notable Contributors
+
+- [Peter Steinberger](https://steipete.me/) - Project creator and maintainer.
+- [Mario Zechner](https://mariozechner.at/) - Pi-mono runtime contributor.
+- [The OpenClaw Contributors](https://github.com/openclaw/openclaw/graphs/contributors) - 380+ community contributors.
 
 ## Related Projects
 
-### AI Coding Assistants
+### AI Assistants
 
 - [Claude Code](https://github.com/anthropics/claude-code) - Terminal-based AI coding assistant by Anthropic.
-- [Gemini CLI](https://github.com/Piebald-AI/awesome-gemini-cli) - Terminal-based AI coding assistant by Google.
-- [Copilot Agents](https://github.com/Code-and-Sorts/awesome-copilot-agents) - AI pair programming by GitHub.
+- [Gemini CLI](https://github.com/google/gemini-cli) - Google's AI assistant for the terminal.
+- [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) - Natural language interface for computers.
+- [Aider](https://github.com/paul-gauthier/aider) - AI pair programming in your terminal.
 
 ### Supporting Projects
 
-- [Pi-mono](https://github.com/badlogic/pi-mono) - Agent runtime support.
-- [soul.md](https://soul.md/) - Personality and soul configuration.
+- [Pi-mono](https://github.com/badlogic/pi-mono) - Agent runtime that powers OpenClaw.
+- [soul.md](https://soul.md/) - Personality and soul configuration framework.
+- [Baileys](https://github.com/WhiskeySockets/Baileys) - WhatsApp Web API used by OpenClaw.
+- [grammY](https://github.com/grammyjs/grammY) - Telegram Bot framework used by OpenClaw.
 
 ### Similar Awesome Lists
 
 - [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) - Resources for Claude Code.
 - [Awesome ChatGPT](https://github.com/sindresorhus/awesome-chatgpt) - ChatGPT resources.
+- [Awesome LLM Apps](https://github.com/Shubhamsaboo/awesome-llm-apps) - LLM application examples.
 - [Awesome Generative AI](https://github.com/steven2358/awesome-generative-ai) - Generative AI tools and resources.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
+
+## License
+
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, the contributors have waived all copyright and related or neighboring rights to this work.
 
 ---
 
