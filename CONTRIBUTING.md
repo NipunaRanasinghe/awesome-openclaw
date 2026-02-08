@@ -10,10 +10,10 @@ Please ensure your contribution adheres to the following guidelines:
 
 - Search previous suggestions before making a new one to avoid duplicates.
 - Make an individual pull request for each suggestion.
-- Use the following format: `- [Name](link) - Description.`
+- Add your item as a new row in the appropriate Markdown table in `README.md`, matching the existing column order and formatting.
 - New categories or improvements to the existing categorization are welcome.
 - Keep descriptions short, simple, and descriptive.
-- End all descriptions with a period.
+- Match the existing punctuation style used in the table.
 - Check your spelling and grammar.
 - Make sure your text editor is set to remove trailing whitespace.
 
