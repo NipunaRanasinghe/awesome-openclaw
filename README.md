@@ -28,6 +28,9 @@ _A curated list of awesome [OpenClaw](https://openclaw.ai/) resources — commun
 
 - [📌 Official Resources](#-official-resources)
 - [🌐 Community](#-community)
+- [🛠️ Community Tools](#%EF%B8%8F-community-tools)
+- [📦 Channel Plugins](#-channel-plugins)
+- [🌍 Localization & Forks](#-localization--forks)
 - [🔗 Related Projects](#-related-projects)
 - [🚀 Contributors](#-contributors)
 
@@ -58,6 +61,49 @@ Places to connect with other OpenClaw users and contributors.
 | [Reddit r/OpenClaw](https://reddit.com/r/openclaw)                                          | Community subreddit                |
 | [Lemmy c/openclaw](https://lemmy.ml/c/openclaw)                                             | Fediverse community                |
 | [Matrix Space](https://matrix.to/#/#openclaw:matrix.org)                                    | Decentralized chat on Matrix       |
+
+---
+
+## 🛠️ Community Tools
+
+Tools and utilities built by the OpenClaw community.
+
+| Project                                                                     | Stars                                                                  | Description                                                              |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [Tokscale](https://github.com/junhoyeo/tokscale)                            | ![](https://img.shields.io/github/stars/junhoyeo/tokscale)             | CLI for tracking token usage across OpenClaw, Claude Code, Codex & more  |
+| [Skillshare](https://github.com/runkids/skillshare)                         | ![](https://img.shields.io/github/stars/runkids/skillshare)            | Sync skills across AI CLI tools with one command                         |
+| [nix-openclaw](https://github.com/openclaw/nix-openclaw)                    | ![](https://img.shields.io/github/stars/openclaw/nix-openclaw)         | Declarative Nix packaging for OpenClaw                                   |
+| [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills) | ![](https://img.shields.io/github/stars/VoltAgent/awesome-openclaw-skills) | Curated list of 2999+ community-built skills                          |
+| [Cherry Studio](https://github.com/CherryHQ/cherry-studio)                  | ![](https://img.shields.io/github/stars/CherryHQ/cherry-studio)        | AI desktop client with 300+ assistants and OpenClaw support              |
+
+---
+
+## 📦 Channel Plugins
+
+Official and community channel plugins available on npm.
+
+| Plugin                                                                               | Description                                          |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| [@openclaw/feishu](https://www.npmjs.com/package/@openclaw/feishu)                   | Feishu/Lark channel integration                      |
+| [@openclaw/bluebubbles](https://www.npmjs.com/package/@openclaw/bluebubbles)         | BlueBubbles (iMessage) channel plugin                |
+| [@openclaw/matrix](https://www.npmjs.com/package/@openclaw/matrix)                   | Matrix channel plugin                                |
+| [@openclaw/msteams](https://www.npmjs.com/package/@openclaw/msteams)                 | Microsoft Teams channel plugin                       |
+| [@openclaw/zalo](https://www.npmjs.com/package/@openclaw/zalo)                       | Zalo channel plugin                                  |
+| [@openclaw/voice-call](https://www.npmjs.com/package/@openclaw/voice-call)           | Voice call plugin                                    |
+| [@marshulll/openclaw-wecom](https://www.npmjs.com/package/@marshulll/openclaw-wecom) | WeCom (WeChat Work) channel plugin                   |
+| [kook-openclaw](https://www.npmjs.com/package/kook-openclaw)                         | KOOK channel support                                 |
+
+---
+
+## 🌍 Localization & Forks
+
+Regional adaptations and translations.
+
+| Project                                                                                        | Stars                                                                                     | Description                               |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------- |
+| [openclaw-cn](https://github.com/jiulingyun/openclaw-cn)                                       | ![](https://img.shields.io/github/stars/jiulingyun/openclaw-cn)                           | Chinese version with Feishu support       |
+| [OpenClawChineseTranslation](https://github.com/1186258278/OpenClawChineseTranslation)         | ![](https://img.shields.io/github/stars/1186258278/OpenClawChineseTranslation)            | Full Chinese translation with guides      |
+| [openclaw-china](https://github.com/BytePioneer-AI/openclaw-china)                             | ![](https://img.shields.io/github/stars/BytePioneer-AI/openclaw-china)                    | Feishu, DingTalk, QQ, WeChat integrations |
 
 ---
 
