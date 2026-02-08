@@ -163,3 +163,5 @@ Your contributions are welcome! Here's how to get started:
 - Submit a pull request with a clear description of your changes.
 
 For more details, see the [CONTRIBUTING.md](CONTRIBUTING.md) guide.
+
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
