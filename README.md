@@ -67,18 +67,18 @@ Places to connect with other OpenClaw users and contributors.
 
 Tools and utilities built by the OpenClaw community.
 
-| Project                                                                         | Description                                                                  |
-| ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [Tokscale](https://github.com/junhoyeo/tokscale)                                | CLI for tracking token usage across 10+ AI agents with interactive TUI       |
-| [Skillshare](https://github.com/runkids/skillshare)                             | Sync skills across 49+ AI CLI tools with security audit and web UI           |
-| [nix-openclaw](https://github.com/openclaw/nix-openclaw)                        | Official declarative Nix packaging for OpenClaw                              |
-| [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills) | Security-vetted collection of 3000+ community skills                         |
-| [Awesome OpenClaw Usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | Community collection of OpenClaw use cases                             |
-| [Cherry Studio](https://github.com/CherryHQ/cherry-studio)                      | AI desktop client with 300+ assistants, MCP support, and enterprise edition  |
-| [MemOS](https://github.com/MemTensor/MemOS)                                     | AI memory OS enabling persistent skill memory for cross-task reuse           |
-| [Manifest](https://github.com/mnfst/manifest)                                   | Real-time cost observability for OpenClaw agents                             |
-| [obsidian-skills](https://github.com/kepano/obsidian-skills)                    | Agent skills for Obsidian — Markdown, Bases, JSON Canvas                     |
-| [AionUi](https://github.com/iOfficeAI/AionUi)                                   | Free local 24/7 cowork app for OpenClaw and other AI CLI tools               |
+| Project                                                                               | Description                                                                  |
+| -------------------------------------------------------------------------------       | ---------------------------------------------------------------------------- |
+| [Tokscale](https://github.com/junhoyeo/tokscale)                                      | CLI for tracking token usage across 10+ AI agents with interactive TUI       |
+| [Skillshare](https://github.com/runkids/skillshare)                                   | Sync skills across 49+ AI CLI tools with security audit and web UI           |
+| [nix-openclaw](https://github.com/openclaw/nix-openclaw)                              | Official declarative Nix packaging for OpenClaw                              |
+| [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills)       | Security-vetted collection of 3000+ community skills                         |
+| [Awesome OpenClaw Usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | Community collection of OpenClaw use cases                                   |
+| [Cherry Studio](https://github.com/CherryHQ/cherry-studio)                            | AI desktop client with 300+ assistants, MCP support, and enterprise edition  |
+| [MemOS](https://github.com/MemTensor/MemOS)                                           | AI memory OS enabling persistent skill memory for cross-task reuse           |
+| [Manifest](https://github.com/mnfst/manifest)                                         | Real-time cost observability for OpenClaw agents                             |
+| [obsidian-skills](https://github.com/kepano/obsidian-skills)                          | Agent skills for Obsidian — Markdown, Bases, JSON Canvas                     |
+| [AionUi](https://github.com/iOfficeAI/AionUi)                                         | Free local 24/7 cowork app for OpenClaw and other AI CLI tools               |
 
 ---
 
