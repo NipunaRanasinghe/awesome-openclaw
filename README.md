@@ -69,16 +69,17 @@ Tools and utilities built by the OpenClaw community.
 
 | Project                                                                         | Description                                                                  |
 | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [Tokscale](https://github.com/junhoyeo/tokscale)                                | CLI for tracking token usage across 10+ AI agents with interactive TUI       |
-| [Skillshare](https://github.com/runkids/skillshare)                             | Sync skills across 49+ AI CLI tools with security audit and web UI           |
-| [nix-openclaw](https://github.com/openclaw/nix-openclaw)                        | Official declarative Nix packaging for OpenClaw                              |
-| [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills) | Security-vetted collection of 3000+ community skills                         |
+| [Tokscale](https://github.com/junhoyeo/tokscale)                                | CLI for tracking token usage across multiple AI agents with interactive TUI  |
+| [Skillshare](https://github.com/runkids/skillshare)                             | Sync skills across multiple AI CLI tools with security audit and web UI      |
+| [nix-openclaw](https://github.com/openclaw/nix-openclaw)                        | Declarative Nix packaging for OpenClaw                                       |
+| [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills) | Curated list of community-built OpenClaw skills                              |
 | [Awesome OpenClaw Usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | Community collection of OpenClaw use cases                             |
 | [Cherry Studio](https://github.com/CherryHQ/cherry-studio)                      | AI desktop client with 300+ assistants, MCP support, and enterprise edition  |
 | [MemOS](https://github.com/MemTensor/MemOS)                                     | AI memory OS enabling persistent skill memory for cross-task reuse           |
 | [Manifest](https://github.com/mnfst/manifest)                                   | Real-time cost observability for OpenClaw agents                             |
 | [obsidian-skills](https://github.com/kepano/obsidian-skills)                    | Agent skills for Obsidian — Markdown, Bases, JSON Canvas                     |
 | [AionUi](https://github.com/iOfficeAI/AionUi)                                   | Free local 24/7 cowork app for OpenClaw and other AI CLI tools               |
+| [ClawMate](https://github.com/BytePioneer-AI/clawmate)                           | Role companion plugin with time-aware scenes and image generation            |
 
 ---
 
@@ -106,8 +107,7 @@ Regional adaptations and translations.
 | Project                                                            | Description                                                              |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------ |
 | [openclaw-cn](https://github.com/jiulingyun/openclaw-cn)           | Chinese community edition with built-in Feishu and network optimizations |
-| [openclaw-china](https://github.com/BytePioneer-AI/openclaw-china) | DingTalk, Feishu, QQ, WeCom/WeChat channel plugins                       |
-| [ClawMate](https://github.com/BytePioneer-AI/clawmate)             | Role companion plugin with time-aware scenes and image generation        |
+| [openclaw-china](https://github.com/BytePioneer-AI/openclaw-china) | DingTalk, Feishu, QQ, WeCom (WeChat Work) and WeChat channel plugins    |
 
 ---
 
