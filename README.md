@@ -47,6 +47,7 @@ Official projects and documentation from the OpenClaw team.
 | [ClawHub](https://clawhub.com/)                                 | Official skills registry for discovering and sharing     |
 | [Discord](https://discord.gg/clawd)                             | Official Discord server for support and discussions      |
 | [DeepWiki](https://deepwiki.com/openclaw/openclaw)              | AI-generated documentation wiki                          |
+| [Lobster](https://github.com/openclaw/lobster)                  | OpenClaw-native workflow shell for composable pipelines  |
 
 ---
 
@@ -119,6 +120,7 @@ Projects that complement or are related to OpenClaw.
 
 | Project                                                                 | Description                                         |
 | ----------------------------------------------------------------------- | --------------------------------------------------- |
+| [nanobot](https://github.com/HKUDS/nanobot)                             | Ultra-lightweight OpenClaw alternative (~4K lines)  |
 | [Claude Code](https://github.com/anthropics/claude-code)                | Terminal-based AI coding assistant                  |
 | [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) | Natural language interface for computers            |
 | [Aider](https://github.com/paul-gauthier/aider)                         | AI pair programming in your terminal                |
@@ -133,15 +135,6 @@ Projects that complement or are related to OpenClaw.
 | [grammY](https://github.com/grammyjs/grammY)         | Telegram Bot framework used by OpenClaw                              |
 | [1Panel](https://github.com/1Panel-dev/1Panel)       | Linux server management panel with OpenClaw agent support            |
 | [Umbrel](https://github.com/getumbrel/umbrel)        | Home server OS with OpenClaw in the app store                        |
-
-### Similar Awesome Lists
-
-| List                                                                         | Description               |
-| ---------------------------------------------------------------------------- | ------------------------- |
-| [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)   | Resources for Claude Code |
-| [Awesome ChatGPT](https://github.com/sindresorhus/awesome-chatgpt)           | ChatGPT resources         |
-| [Awesome LLM Apps](https://github.com/Shubhamsaboo/awesome-llm-apps)         | LLM application examples  |
-| [Awesome Generative AI](https://github.com/steven2358/awesome-generative-ai) | Generative AI resources   |
 
 ---
 
